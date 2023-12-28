@@ -1,7 +1,7 @@
 // similar to your /create invoice page, except it imports a different form (from the edit-form.tsx file)
 // This form should be pre-populated with a defaultValue for the customer's name, invoice amount, and status
-import Form from '@/app/ui/dashboard/invoices/edit-form';
-import Breadcrumbs from '@/app/ui/dashboard/invoices/breadcrumbs';
+import Form from '@/app/ui/invoices/edit-form';
+import Breadcrumbs from '@/app/ui/invoices/breadcrumbs';
 import { fetchInvoiceById, fetchCustomers } from '@/app/lib/data';
 import { notFound } from 'next/navigation';
 
