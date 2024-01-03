@@ -1,6 +1,7 @@
 // Any components you import into this file will be part of the layout.
 import SideNav from '@/app/ui/dashboard/sidenav';
 
+
 // children prop. This child can either be a page or another layout.
 // In your case, the pages inside /dashboard will automatically be nested inside a <Layout />
 export default function Layout({ children }: { children: React.ReactNode }) {
