@@ -17,6 +17,12 @@ const config: Config = {
           500: '#0070F3',
           600: '#2F6FEB',
         },
+        purple: {
+          100: '#ebe4f7', // replace bg-sky-100
+          400: '#8073ff',
+          500: '#8c5cfb',
+          600: '#944df9',
+        },
       },
     },
     keyframes: {
