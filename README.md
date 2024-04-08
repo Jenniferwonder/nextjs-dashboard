@@ -1,8 +1,10 @@
-## Next.js Acme Dashboard
+## Next.js Dashboard
 
-![202404081201716.png](https://cdn.jsdelivr.net/gh/jenniferwonder/bimg/assets/202404081201716.png)
+![](./public/hero-desktop.png)
 
-This project is based on the [Next.js App router template](https://nextjs.org/learn).
+This project is a complete and modified version of [Next.js app router template](https://nextjs.org/learn), hosted on Vercel.
+
+🚀 [View demo | 在线预览](https://nextjs-dashboard-cyan-eta-79.vercel.app)
 
 ### Tech Stack
 
@@ -10,3 +12,12 @@ This project is based on the [Next.js App router template](https://nextjs.org/le
 - `Tailwind` for styling
 - `NextAuth` for login authentication
 - `vercel/postgres` for data storing
+
+### Get Started
+
+- `npm i` install all dependencies
+- `npm run dev` develop on local server
+
+### Project Structure
+
+- To learn more about the project structure and steps to configure Postgres on Vercel, please refer to [Next.js App Router Guide](https://nextjs.org/learn).
