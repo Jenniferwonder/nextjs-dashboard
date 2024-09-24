@@ -1,3 +1,5 @@
+import { sql } from '@vercel/postgres'
+import { unstable_noStore as noStore } from 'next/cache'
 import type {
   CustomerField,
   CustomersTableType,
@@ -7,8 +9,6 @@ import type {
   Revenue,
   User,
 } from './definitions'
-import { sql } from '@vercel/postgres'
-import { unstable_noStore as noStore } from 'next/cache'
 import { formatCurrency } from './utils'
 
 export async function fetchRevenue() {

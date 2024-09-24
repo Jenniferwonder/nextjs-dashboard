@@ -1,10 +1,10 @@
-import type { Metadata } from 'next'
 import { fetchCustomers, fetchInvoiceById } from '@/app/lib/data'
 import Breadcrumbs from '@/app/ui/invoices/breadcrumbs'
+import Form from '@/app/ui/invoices/edit-form'
+import type { Metadata } from 'next'
+import { notFound } from 'next/navigation'
 // similar to your /create invoice page, except it imports a different form (from the edit-form.tsx file)
 // This form should be pre-populated with a defaultValue for the customer's name, invoice amount, and status
-import Form from '@/app/ui/invoices/edit-form'
-import { notFound } from 'next/navigation'
 
 export const metadata: Metadata = {
   title: 'Edit Invoice',

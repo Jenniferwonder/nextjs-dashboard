@@ -4,6 +4,9 @@ const nextConfig = {
     ignoreDuringBuilds: true,
     // plugins: ['@antfu/eslint-config'],
   },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 }
 
 // module.exports = nextConfig

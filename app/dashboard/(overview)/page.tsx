@@ -1,4 +1,3 @@
-import type { Metadata } from 'next'
 // import { Card } from '@/app/ui/dashboard/cards';
 import CardWrapper from '@/app/ui/dashboard/cards'
 import LatestInvoices from '@/app/ui/dashboard/latest-invoices'
@@ -8,13 +7,14 @@ import {
   CardsSkeleton,
   LatestInvoicesSkeleton,
   RevenueChartSkeleton,
-} from '@/app/ui/skeletons'
+  } from '@/app/ui/skeletons'
+import { Suspense } from 'react'
+import type { Metadata } from 'next'
 /* import {
   // fetchRevenue,
   // fetchLatestInvoices,
   // fetchCardData,
 } from '@/app/lib/data'; */
-import { Suspense } from 'react'
 
 export const metadata: Metadata = {
   title: 'Dashboard',

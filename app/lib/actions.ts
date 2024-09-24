@@ -75,6 +75,7 @@ export async function createInvoice(prevState: State, formData: FormData) {
     status: formData.get('status'),
   })
   // If form validation fails, return errors early. Otherwise, continue.
+  // console.error('Missing Fields. Failed to Create Invoice.')
   if (!validatedFields.success) {
     return {
       errors: validatedFields.error.flatten().fieldErrors,
@@ -98,6 +99,9 @@ export async function createInvoice(prevState: State, formData: FormData) {
     return {
       message: 'Database Error: Failed to Create Invoice',
     }
+  }
+  finally {
+    console.log(validatedFields)
   }
   // Revalidate the cache for the invoices page and redirect the user.
   revalidatePath('/dashboard/invoices')
@@ -154,13 +158,13 @@ export async function deleteInvoice(id: string) {
   throw new Error('Failed to Delete Invoice')
 
   // Unreachable code block
-  try {
-    await sql`DELETE FROM invoices WHERE id = ${id}`
-  }
-  catch (err) {
-    return {
-      message: 'Database Error: Failed to Delete Invoice',
-    }
-  }
-  revalidatePath('/dashboard/invoices')
+  // try {
+  //   await sql`DELETE FROM invoices WHERE id = ${id}`
+  // }
+  // catch (err) {
+  //   return {
+  //     message: 'Database Error: Failed to Delete Invoice',
+  //   }
+  // }
+  // revalidatePath('/dashboard/invoices')
 }
